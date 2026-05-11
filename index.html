@@ -337,17 +337,23 @@
   align-items: center;
   gap: 14px;
   padding: 18px;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
+  background: rgba(12, 18, 32, 0.88);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
   text-decoration: none;
-  color: #111;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: 0.2s ease;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  box-shadow:
+    0 0 18px rgba(0,0,0,0.25);
 }
 
 .cta-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.10);
 }
 
@@ -369,19 +375,27 @@
 }
 
 .cta-blue {
-  border-left: 6px solid #2563eb;
+  box-shadow:
+    inset 3px 0 0 #2563eb,
+    0 0 18px rgba(37,99,235,0.18);
 }
 
 .cta-sky {
-  border-left: 6px solid #0284c7;
+  box-shadow:
+    inset 3px 0 0 #0ea5e9,
+    0 0 18px rgba(14,165,233,0.18);
 }
 
 .cta-purple {
-  border-left: 6px solid #7c3aed;
+  box-shadow:
+    inset 3px 0 0 #9333ea,
+    0 0 18px rgba(147,51,234,0.18);
 }
 
 .cta-red {
-  border-left: 6px solid #dc2626;
+  box-shadow:
+    inset 3px 0 0 #dc2626,
+    0 0 18px rgba(220,38,38,0.18);
 }
 
 @media (max-width: 640px) {
