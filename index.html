@@ -329,19 +329,25 @@
 .cta-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
 .cta-card {
+  min-height: 86px;
+  padding: 14px 18px;
+
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 18px;
+
   background: rgba(12, 18, 32, 0.88);
   backdrop-filter: blur(10px);
-  border-radius: 18px;
+
+  border-radius: 22px;
+
   text-decoration: none;
   color: #fff;
+
   border: 1px solid rgba(255,255,255,0.08);
 
   transition:
@@ -358,20 +364,38 @@
 }
 
 .cta-icon {
-  font-size: 30px;
-  width: 44px;
-  text-align: center;
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
 }
 
 .cta-card h3 {
-  font-size: 17px;
+  font-size: 15px;
+  line-height: 1.35;
   margin: 0 0 4px;
+  color: #fff;
 }
 
 .cta-card p {
-  font-size: 13px;
+  font-size: 11px;
+  line-height: 1.4;
   margin: 0;
-  color: rgba(255,255,255,0.68);
+  color: rgba(255,255,255,0.72);
+}
+
+ .cta-arrow {
+  margin-left: auto;
+  color: #d4af37;
+  font-size: 28px;
+  line-height: 1;
 }
 
 .cta-blue {
@@ -404,7 +428,7 @@
   }
 
   .cta-card {
-    padding: 16px;
+    min-height: 86px;
   }
 }
  
@@ -486,6 +510,7 @@
         <h3>回収チェッカーを使う</h3>
         <p>年会費を回収できているか確認</p>
       </div>
+     <span class="cta-arrow">›</span>
     </a>
 
     <a href="https://youtu.be/MMryhbyKOac" class="cta-card cta-sky">
@@ -494,6 +519,7 @@
         <h3>ANA・JAL航空系情報を見る</h3>
         <p>SFC・JGC・マイル情報まとめ</p>
       </div>
+     <span class="cta-arrow">›</span>
     </a>
 
     <a href="https://youtu.be/Ywx-W_WV8_Y" class="cta-card cta-purple">
@@ -502,6 +528,7 @@
         <h3>ホテルカード系情報</h3>
         <p>ヒルトン・マリオット系を確認</p>
       </div>
+     <span class="cta-arrow">›</span>
     </a>
 
  <a href="https://note.com/joyful_allium943/n/n079f57cc3c0e" class="cta-card cta-red">
@@ -510,6 +537,7 @@
     <h3>おすすめ記事</h3>
     <p>注目のクレカ・航空情報を見る</p>
   </div>
+  <span class="cta-arrow">›</span>
 </a>
   </div>
 </section>
