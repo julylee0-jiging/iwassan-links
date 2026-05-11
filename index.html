@@ -308,6 +308,92 @@
     from { transform: rotate(0deg); }
     to   { transform: rotate(360deg); }
   }
+.cta-section {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.cta-section h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.cta-lead {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.cta-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #111;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: 0.2s ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+}
+
+.cta-icon {
+  font-size: 30px;
+  width: 44px;
+  text-align: center;
+}
+
+.cta-card h3 {
+  font-size: 17px;
+  margin: 0 0 4px;
+}
+
+.cta-card p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.cta-blue {
+  border-left: 6px solid #2563eb;
+}
+
+.cta-sky {
+  border-left: 6px solid #0284c7;
+}
+
+.cta-purple {
+  border-left: 6px solid #7c3aed;
+}
+
+.cta-red {
+  border-left: 6px solid #dc2626;
+}
+
+@media (max-width: 640px) {
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-card {
+    padding: 16px;
+  }
+}
+ 
 </style>
 </head>
 <body>
@@ -375,6 +461,45 @@
   </p>
 
 </div>
+<section class="cta-section">
+  <h2>目的別にチェック</h2>
+  <p class="cta-lead">気になるテーマからすぐに確認できます。</p>
+
+  <div class="cta-grid">
+    <a href="https://links.justdoitjustdoit.com/checker/" class="cta-card cta-blue">
+      <div class="cta-icon">💳</div>
+      <div>
+        <h3>回収チェッカーを使う</h3>
+        <p>年会費を回収できているか確認</p>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/@あなたのチャンネル" class="cta-card cta-sky">
+      <div class="cta-icon">✈️</div>
+      <div>
+        <h3>ANA・JAL修行を見る</h3>
+        <p>SFC・JGC・マイル情報まとめ</p>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/@あなたのチャンネル" class="cta-card cta-purple">
+      <div class="cta-icon">🏨</div>
+      <div>
+        <h3>ホテル系カード比較</h3>
+        <p>ヒルトン・マリオット系を確認</p>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/@あなたのチャンネル" class="cta-card cta-red">
+      <div class="cta-icon">▶️</div>
+      <div>
+        <h3>YouTube最新動画</h3>
+        <p>最新のクレカ・航空情報を見る</p>
+      </div>
+    </a>
+  </div>
+</section>
+ 
   <div class="divider"><span class="divider-icon">◆</span></div>
 
   <div class="links">
