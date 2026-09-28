@@ -452,6 +452,43 @@
   border-left: 1px solid rgba(212,175,55,0.75);
 }
 
+/* LINEスタンプ（新発売） */
+.cta-line {
+  border: 1.5px solid #06C755;
+  background: linear-gradient(180deg, rgba(6,199,85,0.16), rgba(5,10,18,0.96));
+  box-shadow:
+    0 0 20px rgba(6,199,85,0.28),
+    inset 0 0 18px rgba(255,255,255,0.03);
+}
+
+.cta-line:hover {
+  box-shadow:
+    0 0 26px rgba(6,199,85,0.45),
+    inset 0 0 18px rgba(255,255,255,0.04);
+}
+
+.cta-line .cta-icon {
+  border-color: #06C755;
+  background: rgba(6,199,85,0.18);
+}
+
+.cta-line .cta-arrow {
+  color: #06C755;
+}
+
+.cta-new {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #06C755;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+}
+
 @media (min-width: 760px) {
   .cta-grid {
     grid-template-columns: 1fr;
@@ -557,6 +594,15 @@
   <p class="cta-lead">気になるテーマからすぐに確認できます。</p>
 
   <div class="cta-grid">
+    <a href="https://line.me/S/sticker/36608851" target="_blank" rel="noopener noreferrer" class="cta-card cta-line">
+      <div class="cta-icon">💬</div>
+      <div>
+        <h3>LINEスタンプ<span class="cta-new">NEW</span></h3>
+        <p>いわっさんスタンプ発売中！</p>
+      </div>
+     <span class="cta-arrow">›</span>
+    </a>
+
     <a href="https://tool.justdoitjustdoit.com/" class="cta-card cta-blue">
       <div class="cta-icon">💳</div>
       <div>
